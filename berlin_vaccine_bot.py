@@ -13,12 +13,9 @@ class Doctor:
   requestUrl: str
   pageUrl: str
 
-
-headers = {
-  'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.76 Safari/537.36'
-}
 loop = 0
 waitingTime = 30
+goalDate = date.today() + timedelta(days=14)
 doctors = [
   Doctor(
     "GKH",
@@ -61,7 +58,9 @@ doctors = [
     "https://www.doctolib.de/institut/berlin/ciz-berlin-berlin?pid=practice-191611"
   )
 ]
-goalDate = date.today() + timedelta(days=14)
+headers = {
+  'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.76 Safari/537.36'
+}
 print("Looking for slots. Goal date:", goalDate)
 
 
