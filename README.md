@@ -28,4 +28,4 @@ If you're looking for appointments further than 14 days, just change the `goalDa
 You can stop bot by pressing ctrl+c on the keyboard
 
 ## Instructions for Mac
-python 3 needs to be set as the default path.
+Please install Python 3 and follow the `Usage` section above.
